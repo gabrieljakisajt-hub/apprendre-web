@@ -1,0 +1,13 @@
+.erreur {
+  color: #c0392b;
+  font-size: 0.9em;
+  min-height: 1.2em; /* évite le "saut" quand le message apparaît */
+  margin: 4px 0;
+}
+.succes {
+  color: #1e8449;
+  font-weight: bold;
+}
+input[aria-invalid="true"] {
+  border-color: #c0392b;
+}
