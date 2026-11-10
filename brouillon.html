@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jour 19 : stockage du navigateur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Brouillon automatique</h1>
+  </header>
+
+  <main>
+
+    <p id="info" class="info cache" aria-live="polite"></p>
+
+    <form id="form-brouillon" novalidate>
+
+      <label for="auteur">Ton prénom</label><br>
+      <input type="text" id="auteur" name="auteur" placeholder="Ex. Awa" required>
+      <p class="erreur" id="erreur-auteur" aria-live="polite"></p>
+
+      <label for="idee">Ton idée (3 à 100 caractères)</label><br>
+      <input type="text" id="idee" name="idee" placeholder="Un jeune héros qui..." required>
+      <p class="erreur" id="erreur-idee" aria-live="polite"></p>
+
+      <button type="submit" id="btn-envoyer">Envoyer</button>
+      <button type="button" id="btn-effacer-brouillon">Effacer le brouillon</button>
+
+    </form>
+
+    <p id="succes" class="succes cache" aria-live="polite"></p>
+
+  </main>
+
+  <script src="js/jour19.js"></script>
+</body>
+</html>

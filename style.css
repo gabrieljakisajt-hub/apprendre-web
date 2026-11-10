@@ -1,13 +1,28 @@
+
+
+/* Si .cache n'y est pas déjà (héritage J17), ajoute-la : */
+.cache {
+  display: none;
+}
+
+/* Vérifie que ces classes du J18 sont là, sinon ajoute : */
 .erreur {
   color: #c0392b;
   font-size: 0.9em;
-  min-height: 1.2em; /* évite le "saut" quand le message apparaît */
+  min-height: 1.2em;
   margin: 4px 0;
 }
 .succes {
   color: #1e8449;
   font-weight: bold;
 }
-input[aria-invalid="true"] {
-  border-color: #c0392b;
+
+/* Nouveau pour J19 : */
+.info {
+  color: #2c3e50;
+  font-style: italic;
+  font-size: 0.95em;
+  padding: 8px 12px;
+  background: #eef2f7;
+  border-left: 3px solid #3498db;
 }
